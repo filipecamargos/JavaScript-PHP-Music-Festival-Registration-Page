@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYUI | Music Registration</title>
+    <link rel="stylesheet" type="text/css" href="sources/page.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="log">
+            <img src="images/musicinco.png" alt="logo">
+            <h1 id="messagethank">Music Festival Registration</h1>
+            <img src="images/musicinco.png" alt="logo">
+        </div>
+    </header>
+    <main>
+        <div id="studentForm">
+            <div>
+                <h3>Candidate Information</h3>
+            </div>
+            <form id="myForm">
+                <!--This buttos are under card for css-->
+                <label>Performance Type</label><br>
+                <input type="radio" name="performance" class="card" id="card" value="Solo" required>Solo
+                <input type="radio" name="performance" class="card" value="Concerto" required>Concerto
+                <input type="radio" name="performance" class="card" value="Duet" required>Duet<br><br>
+
+                <label>First Name</label><br>
+                <input type="text" name="first_name" id="first_name" placeholder="First Name" required><br><br>
+
+                <label for="last_name">Last Name</label><br>
+                <input type="text" name="last_name" id="last_name" placeholder="Last Name" required><br><br>
+
+                <label for="student_id">Student ID</label><br>
+                <input type="text" name="student_id" id="student_id" placeholder="Student ID" required><br><br>
+
+                <div id="student2">
+                    <label>Second Candidate Information</label><br><br>
+
+                    <label for="first_nameA">First Name</label><br>
+                    <input type="text" name="first_name_2" id="first_nameA" placeholder="First Name"><br><br>
+
+                    <label for="last_nameA">Last Name</label><br>
+                    <input type="text" name="last_name_2" id="last_nameA" placeholder="Last Name"><br><br>
+
+                    <label for="student_idA">Student ID</label><br>
+                    <input type="text" name="student_id_2" id="student_idA" placeholder="Student ID"><br><br>
+                </div><br>
+
+                <label for="skill">Skill Level</label><br>
+                <select name="skill" id="skill" required>
+                <option value="" disabled selected>Choose a Skill Level</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Pre-advanced">Pre-advanced</option>
+                <option value="Advanced">Advanced</option>
+                </select><br><br>
+
+                <label for="instrument">Instrument</label><br>
+                <select name="instrument" id="instrument" required>
+                <option value="" disabled selected>Choose an Instrument</option>
+                <option value="Piano">Piano</option>
+                <option value="Voice">Voice</option>
+                <option value="String">String</option>
+                <option value="Organ">Organ</option>
+                <option value="Other">Other</option>
+                </select><br><br>
+
+                <label for="location">Location</label><br>
+                <select name="location" id="location" required>
+                <option value="" disabled selected>Choose a Building</option>
+                <option value="Snow">Snow</option>
+                <option value="Mckay">Mckay</option>
+                <option value="MC">MC</option>
+                <option value="Austin">Austin</option>
+                </select><br><br>
+
+                <label for="room">Room</label><br>
+                <select name="room" id="room" required>
+                <option value="" disabled selected>Choose a Room</option>
+                <option value="101">101</option>
+                <option value="235">235</option>
+                <option value="270">270</option>
+                <option value="301">301</option>
+                </select><br><br>
+
+                <label>Tyme Slot</label><br>
+                <input type="radio" name="time_slot" class="card" value="8:00am" required>8:00am
+                <input type="radio" name="time_slot" class="card" value="9:45am" required>9:45am<br><br>
+
+                <div id="buttons">
+                    <button type="reset" id="cancel-pay">Clear</button>
+                    <button type="button" id="pay-button">Register</button>
+                </div>
+            </form>
+        </div>
+        <div id="spaceDisplay">
+            <h2>Registred Students</h2>
+            <div id="displayInfo"></div>
+        </div>
+    </main>
+    <script src="sources/page1.js"></script>
+</body>
+
+</html>

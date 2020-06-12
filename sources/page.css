@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+body {
+    margin: 0px;
+}
+
+main {
+    background-image: url(../images/background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 500px auto;
+    height: 100%;
+}
+
+#spaceDisplay {
+    grid-column: 2;
+}
+
+#spaceDisplay h2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: 0px;
+    text-align: center;
+    font-family: 'Trade Winds', sans-serif;
+}
+
+.personInfo {
+    background-color: rgba(123, 24, 216, 0.41);
+    padding: 1em;
+    margin: 10px;
+    color: white;
+    padding: 1em;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 2%;
+    letter-spacing: 0.5px;
+    width: 250px;
+}
+
+#displayInfo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/******************************************
+HEADER STYLE
+*******************************************/
+
+#log {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #731ac7;
+    padding: 15px 0 15px;
+    color: #ffffff;
+    font-family: 'Trade Winds', sans-serif;
+    width: 100%;
+}
+
+
+/***************************************
+Information
+****************************************/
+
+#studentForm {
+    background-color: #2E2F36;
+    color: white;
+    width: 450px;
+    height: 100%;
+    padding: 0 0 1em;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 2%;
+    letter-spacing: 0.5px;
+    grid-column: 1;
+}
+
+#studentForm input,
+select {
+    background-color: #454756;
+    border-color: #454756;
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    width: 75%;
+    margin-top: 10px;
+}
+
+#student2 input {
+    background-color: #2E2F36;
+    border-color: #2E2F36;
+}
+
+#studentForm .card {
+    height: 10px;
+}
+
+#studentForm .card {
+    width: 15px;
+    align-content: flex-start;
+}
+
+#studentForm h3 {
+    text-align: center;
+    background-color: #454756;
+    padding: 1em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 0;
+}
+
+#student2 {
+    background-color: #454756;
+    padding: 1em;
+    border-radius: 10px;
+    width: 90%;
+    display: none;
+}
+
+#studentForm form {
+    padding: 1em;
+    border-radius: 10px;
+}
+
+#studentForm #buttons {
+    text-align: center;
+}
+
+#buttons button {
+    padding: 1em;
+    color: #ffffff;
+    background-color: #25A1D0;
+    border: none;
+    font-weight: bold;
+    border-radius: 5%;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+#buttons button:hover {
+    background-color: #454756;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 860px) {
+    main {
+        display: block;
+    }
+    #spaceDisplay h2 {
+        margin-top: 10px;
+        margin-left: 10px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    #studentForm {
+        width: auto;
+    }
+}

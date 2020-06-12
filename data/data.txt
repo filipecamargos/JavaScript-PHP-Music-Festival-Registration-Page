@@ -1,0 +1,1 @@
+[{"type":"Solo","fname":"Filipe","lname":"Ferreira","student":"55555","skill":"Intermediate","instrument":"Voice","location":"Mckay","room":"101","time":"8:00am"},{"type":"Concerto","fname":"Filipe","lname":"Ferreira","student":"55555","skill":"Pre-advanced","instrument":"Voice","location":"Snow","room":"235","time":"8:00am"}]
